@@ -4,7 +4,7 @@ import Nav from "../components/nav";
 
 const content = {
   description: "Web and software development.",
-  icon: "/icon.svg",
+  icon: "/icon.png",
   logo: "/icon.svg"
 };
 
@@ -35,7 +35,7 @@ const Home = () => (
       <link rel="alternate" hreflang="en" href="https://devinor.no" />
       <link rel="alternate" hreflang="no" href="https://devinor.no" />
       <link rel="shortcut icon" href={content.icon} />
-      <link rel="apple-touch-icon" href="/images/logo/ascend-logo-social.jpg" />
+      <link rel="apple-touch-icon" href={content.icon} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -57,7 +57,7 @@ const Home = () => (
 
     <Nav />
 
-    <img src="/icon.svg" />
+    <img src={content.icon} />
   </div>
 );
 
